@@ -1,0 +1,52 @@
+.cources-page .box {
+    --c-profile-button: #0075FF;
+    --c-remove-button: #F44336;
+
+    & .contact {
+        flex-grow: 1;
+
+        & .contact-icon {
+            background-color: var(--main-color, #EEE);
+            width: 35px;
+            transition: var(--main-transition, 0.5s);
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--alt-color, blue);
+                color: white;
+            }
+        }
+    }
+
+    & .personal-info {
+        & .personal-photo {
+            & img:first-of-type {
+                width: 90px;
+            }
+        }
+    }
+
+    & .info-vip {
+        border-block: 1px solid #ccc;
+
+        & .vip {
+            & span:first-of-type {
+                color: var(--c-remove-button, red);
+                font-size: 35px;
+                opacity: 0.4;
+            }
+        }
+    }
+
+    & .profile-info {
+        & .profile-buttons {
+            & .profile {
+                background-color: var(--c-profile-button, blue) !important;
+            }
+
+            & .remove {
+                background-color: var(--c-remove-button, blue);
+            }
+        }
+    }
+}

@@ -1,0 +1,1106 @@
+.page-content {
+    min-height: 100vh;
+}
+
+/* Edit Side Bar */
+.sidebar {
+    width: fit-content;
+    background-color: #FFFFFF !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 0 2.6px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width:767px) {
+    .sidebar {
+        width: 50px;
+    }
+}
+
+.sidebar .sidbar-content {
+    & h3 {
+        font-weight: 700;
+        font-size: 20px;
+        width: fit-content;
+        position: relative;
+        margin: 0 auto 30px;
+        animation: change-color 4s infinite linear;
+    }
+
+    & h3::before,
+    & h3::after {
+        content: '';
+        position: absolute;
+        background-color: black;
+        bottom: 0;
+        left: -10px;
+        animation: background-line 4s infinite linear;
+    }
+
+    & h3::before {
+        width: calc(100% + 20px);
+        height: 2px;
+    }
+
+    & h3::after {
+        left: 50%;
+        translate: -50% 0;
+        border-radius: 50%;
+        width: 12px;
+        aspect-ratio: 1/1;
+        border: 4px solid white;
+        bottom: calc(-19.68px / 2);
+        animation: trans-motion 4s infinite linear;
+    }
+}
+
+.content {
+    width: 100%;
+}
+
+/* Edit Padding For all-content of sidebar */
+@media (max-width:767px) {
+    .sidebar .sidbar-content {
+        padding: 0;
+    }
+}
+
+/* Edit margin For h3 of sidebar */
+@media (max-width:767px) {
+    .sidebar .sidbar-content>h3 {
+        padding-bottom: 0;
+        display: none;
+    }
+}
+
+.sidebar .sidbar-content .content {
+    & ul {
+        & li {
+            transition: var(--main-transition, 0.5s);
+
+            & :hover,
+            & :focus {
+                background-color: #f6f6f6;
+            }
+        }
+    }
+}
+
+/* Edit Span On Small Size */
+@media (max-width:767px) {
+    .sidebar .sidbar-content .content ul li span {
+        display: none;
+    }
+}
+
+/* End Side Bar */
+
+/* Start Header */
+.contact {
+    width: 100%;
+}
+
+header {
+    background-color: white;
+}
+
+header .head-content {
+    justify-content: space-between;
+
+    & form {
+        position: relative;
+
+        & input {
+            padding: 8px 8px 8px 30px;
+            border: 1px solid #CCC;
+            width: 80%;
+            transition: var(--main-transition, 0.5s);
+        }
+
+        & input::placeholder {
+            font-size: 15px;
+            transition: var(--main-transition, 0.5s);
+        }
+
+        & input:focus::placeholder {
+            color: transparent;
+        }
+
+        & input:focus {
+            width: 100%;
+        }
+
+    }
+
+
+
+    & form::before {
+        font-family: "Font Awesome 6 Free";
+        content: "\f002";
+        font-weight: 900;
+        font-size: 14px;
+        left: 9px;
+        position: absolute;
+        top: 50%;
+        translate: 0 -50%;
+        color: var(--p-color, #888);
+    }
+
+    & div {
+        position: relative;
+
+        & .notification-icon {
+            font-size: 20px;
+            position: relative;
+        }
+
+        & .notification-icon::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            aspect-ratio: 1 / 1;
+            background-color: red;
+            border-radius: 50%;
+            right: -6px;
+            top: -6px;
+        }
+
+        & img {
+            width: 32px;
+            max-width: 100%;
+        }
+    }
+}
+
+/* End Header */
+
+/* Start Dashboard  */
+
+.all-content {
+    & h1 {
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: calc(100% - 15px);
+            height: 5px;
+            bottom: 0;
+            left: 15px;
+            border-radius: 8px;
+        }
+
+        &::before {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            width: 5%;
+            animation: loading linear infinite 14s;
+        }
+
+        &::after {
+            background-color: white;
+            outline: 2px solid;
+            z-index: -1;
+        }
+    }
+}
+
+/* Start Edit Welcome */
+.welcome-box .main-info {
+    background-color: var(--main-color, #DDD);
+
+    & img {
+        width: 200px;
+    }
+}
+
+.welcome-box .second-box {
+    padding: 55px;
+}
+
+.welcome-box .info {
+    & img {
+        width: 60px;
+        top: calc(-60px / 2);
+        left: 20px;
+    }
+
+    & .all-date {
+        border: 1px solid var(--main-color, #333);
+    }
+
+    & a {
+        margin-left: auto;
+        background-color: var(--alt-color, blue);
+        transition: var(--main-transition, 0.5s);
+        color: white;
+
+        &:hover {
+            background-color: var(--hover-color, blue);
+        }
+    }
+}
+
+/* Edit Position Of Profile button */
+@media (max-width:767px) {
+    .welcome-box .info a {
+        width: 100%;
+    }
+}
+
+/* Edit position of avatar Photo On 768px */
+@media (max-width:767px) {
+    .welcome-box .info img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/*Edit margin Of date Element*/
+@media (max-width:767px) {
+    .welcome-box .info .all-date .date {
+        margin-bottom: 20px;
+    }
+}
+
+/* End Edit margin Of date Element*/
+
+
+/* Start Edit Draft */
+
+.draft-box {
+
+    & a {
+        margin-left: auto;
+        background-color: var(--alt-color, blue);
+        color: white;
+        transition: var(--main-transition, 0.5s);
+
+        &:hover {
+            background-color: var(--hover-color, blue);
+        }
+    }
+}
+
+/* Edit Position Of save button */
+@media (max-width:767px) {
+    .draft-box a {
+        width: 100%;
+    }
+}
+
+.draft-box form {
+
+    & input,
+    & textarea {
+        background-color: var(--main-color, #EEE);
+        border: 1px solid #0037ff;
+    }
+
+    & textarea {
+        height: 200px;
+        resize: none;
+    }
+}
+
+/* End Edit Draft */
+
+/* Start Edit Target */
+.target-box {
+    --money-background: #CCE3FF;
+    --project-background: #FDECCE;
+    --project-color: #F39D0B;
+    --team-background: #D3F3DF;
+    --team-color: #22C55E;
+}
+
+/* Edit All Boxs  */
+.target-box .box {
+    & .target-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        background-color: var(--money-background, #DDD);
+        color: var(--alt-color, blue);
+        font-size: 21px;
+    }
+
+    .info {
+        align-self: center;
+        flex: 1;
+
+        & span:first-of-type,
+        & span:last-of-type {
+            font-size: 17px;
+        }
+    }
+
+    & .level {
+        height: 4px;
+        background-color: var(--money-background, #DDD);
+
+        & div {
+            background-color: var(--alt-color, blue);
+            height: 100%;
+
+            &::before,
+            &::after {
+                position: absolute;
+            }
+
+            &::before {
+                content: attr(level);
+                width: 22px;
+                padding: 5px 10px;
+                background-color: var(--alt-color, blue);
+                border-radius: 6px;
+                color: white;
+                top: -38px;
+                right: calc(-42px / 2);
+                font-size: 12px;
+            }
+
+            &::after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-width: 7px;
+                border-color: var(--alt-color, blue) transparent transparent transparent;
+                border-style: solid;
+                right: -7px;
+                top: -13px;
+            }
+        }
+    }
+}
+
+
+
+/* Add Some Edits In Color At Box-Two */
+.target-box :nth-child(2 of .box) {
+    & .target-icon {
+        background-color: var(--project-background, red);
+        color: var(--project-color, red);
+    }
+
+    & .level {
+        background-color: var(--project-background, red);
+
+        & div,
+        &::before,
+        &::after {
+            background-color: var(--project-color, red);
+        }
+    }
+
+}
+
+
+/* Add Some Edits In Color At Box-Three */
+
+.target-box :nth-child(3 of .box) {
+    & .target-icon {
+        background-color: var(--team-background, red);
+        color: var(--team-color, red);
+    }
+
+    & .level {
+        background-color: var(--team-background, red);
+
+        & div,
+        &::before,
+        &::after {
+            background-color: var(--team-color, red);
+        }
+    }
+
+}
+
+/* End Edit Target */
+
+/* Start Edit Tickets */
+
+.tickets-box .info {
+    gap: 20px;
+}
+
+.tickets-box .main-box {
+    width: 50%;
+
+    & .box {
+        border: 1px solid #CCC;
+
+        & .ticket-icon,
+        & span:first-of-type {
+            font-size: 25px;
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .tickets-box .main-box {
+        width: 100%;
+    }
+}
+
+.tickets-box .info :nth-child(1 of .main-box) {
+
+    & :nth-child(1 of .box) {
+        & .ticket-icon {
+            color: #F59E0B;
+        }
+    }
+
+    & :nth-child(2 of .box) {
+        & .ticket-icon {
+            color: #22C55E;
+        }
+    }
+}
+
+.tickets-box .info :nth-child(2 of .main-box) {
+
+    & :nth-child(1 of .box) {
+        & .ticket-icon {
+            color: #0075FF;
+        }
+    }
+
+    & :nth-child(2 of .box) {
+        & .ticket-icon {
+            color: #F44336;
+        }
+    }
+}
+
+/* End Edit Tickets */
+
+/* Start News */
+.news-box .main-box .box {
+
+    & .image-date {
+        & img {
+            width: 100px;
+        }
+    }
+
+    & span {
+        cursor: text;
+    }
+}
+
+/* Edit box Flex-direction and margin-bottom between any box */
+@media (max-width:767px) {
+    .news-box .main-box .box {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* Edit Image Flex-direction and text-align and cancel margin-right of photo*/
+@media (max-width:767px) {
+    .news-box .main-box .box .image-date {
+        flex-direction: column;
+        text-align: center;
+
+        & img {
+            margin-right: 0;
+        }
+    }
+}
+
+.news-box .main-box .box:not(:last-child) {
+    border-bottom: 1px solid var(--main-color);
+}
+
+/* End News */
+
+/* Start tasks */
+.tasks-box .main-box .box {
+    & .task-icon {
+        font-size: 17px;
+        transition: var(--main-transition, 0.5s);
+        cursor: pointer;
+        text-decoration: none !important;
+
+        &:hover {
+            color: rgb(213, 7, 7);
+        }
+    }
+}
+
+.tasks-box .main-box .box:nth-child(4) {
+    opacity: 0.5;
+
+    & :where(h3, p) {
+        text-decoration: line-through;
+    }
+
+}
+
+.tasks-box .main-box .box:not(:last-child) {
+    border-bottom: 1px solid var(--main-color);
+}
+
+/* ENd tasks */
+
+/* Start Top-Search  */
+
+.top-search-box .main-box {
+    & .box {
+        & .info {
+            & span:first-child {
+                font-size: 17px;
+            }
+
+            & span:last-of-type {
+                cursor: text;
+            }
+        }
+    }
+}
+
+/* End Top-Search  */
+
+/* Start uploads */
+
+.uploads-box .main-box .box {
+    & .image-date {
+        & img {
+            width: 40px;
+        }
+    }
+
+    & span {
+        cursor: text;
+    }
+}
+
+.uploads-box .main-box .box:not(:last-child) {
+    border-bottom: 1px solid var(--main-color);
+
+}
+
+/* End uploads */
+
+/* Start Progress  */
+
+
+.progress-box .main-box .box {
+    & .outer-circle {
+        width: 25px;
+        border: 2px solid var(--hover-color, blue);
+
+        & .inner-circle {
+            background-color: var(--hover-color, blue);
+            border-radius: 50%;
+            width: 22px;
+            aspect-ratio: 1 / 1;
+            border: 2px solid white;
+            animation: progress 2s infinite;
+        }
+    }
+
+    & p {
+        margin: 0;
+        font-size: 16px;
+    }
+}
+
+.progress-box .main-box .box:not(:last-of-type) .outer-circle:before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 30px;
+    background-color: #14884c;
+    top: 100%;
+    animation: background-projects-line 2.5s linear infinite;
+}
+
+.progress-box .main-box :nth-child(1 of .box) .outer-circle {
+    border-color: rgba(161, 161, 10, 0.979);
+
+    & .inner-circle {
+        background-color: rgba(161, 161, 10, 0.979);
+        animation-delay: 6s;
+    }
+}
+
+.progress-box .main-box :nth-child(2 of .box) .outer-circle {
+    border-color: rgba(102, 28, 205, 0.651);
+
+    & .inner-circle {
+        background-color: rgba(102, 28, 205, 0.651);
+        animation-delay: 5s;
+    }
+}
+
+.progress-box .main-box :nth-child(3 of .box) .outer-circle {
+    border-color: rgb(230, 4, 147);
+
+    & .inner-circle {
+        background-color: rgb(230, 4, 147);
+        animation-delay: 4s;
+    }
+}
+
+.progress-box .main-box :nth-child(4 of .box) .outer-circle {
+    border-color: rgb(6, 121, 149);
+
+    & .inner-circle {
+        background-color: rgb(6, 121, 149);
+        animation-delay: 3s;
+    }
+}
+
+.progress-box .main-box :nth-child(5 of .box) .outer-circle {
+    border-color: rgb(176, 8, 8);
+
+    & .inner-circle {
+        background-color: rgb(176, 8, 8);
+        animation-delay: 2s;
+    }
+
+}
+
+.progress-box>img {
+    width: 140px;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+
+/* End Progress  */
+
+/* Start Reminders */
+.reminders-box .main-box .box {
+
+    & .shape {
+        width: 45px;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: var(--hover-color, blue);
+        }
+
+        &::before {
+            width: 15px;
+            aspect-ratio: 1 / 1;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            border-radius: 50%;
+        }
+
+        &::after {
+            height: 100%;
+            width: 2px;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    & .info {
+        & h3 {
+            font-size: 16px;
+        }
+
+        & p {
+            font-size: 14px;
+        }
+    }
+}
+
+.reminders-box .main-box :nth-child(2 of .box) .shape {
+
+    &::before,
+    &::after {
+        background-color: #F59E0B;
+    }
+}
+
+.reminders-box .main-box :nth-child(3 of .box) .shape {
+
+    &::before,
+    &::after {
+        background-color: #22C55E;
+    }
+}
+
+.reminders-box .main-box :nth-child(4 of .box) .shape {
+
+    &::before,
+    &::after {
+        background-color: #F44336;
+    }
+}
+
+/* End Reminders */
+
+/* Start Posts */
+
+.posts-box .main-box .box .info {
+    & img {
+        width: 54px;
+    }
+}
+
+.posts-box .main-box .reaction {
+
+    & div {
+        cursor: pointer;
+
+        & span {
+            transition: var(--main-transition, 0.5s);
+        }
+    }
+
+    & div:first-of-type {
+        &:hover {
+
+            & span,
+            & .reaction-icon:first-of-type {
+                color: rgb(255, 0, 0);
+            }
+        }
+
+
+        & .reaction-icon:first-of-type {
+            color: rgb(255, 0, 0, 74%);
+            transition: var(--main-transition, 0.5s);
+        }
+    }
+
+    & div:last-of-type {
+        &:hover {
+
+            & span,
+            & .reaction-icon:last-of-type {
+                color: rgb(210, 0, 66);
+            }
+        }
+
+        & .reaction-icon:last-of-type {
+            color: rgb(210, 0, 66, 74%);
+            transition: var(--main-transition, 0.5s);
+        }
+    }
+}
+
+/* Edit P text-align and max-width */
+@media (max-width:767px) {
+    .posts-box .main-box .post p {
+        max-width: 95%;
+        text-align: center;
+    }
+}
+
+/* End Posts */
+
+/* Start Social Media */
+
+.social-box .main-box .box {
+    & .image-date {
+        & .social-icon {
+            font-size: 29px;
+            width: 50px;
+        }
+
+        & span {
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+
+}
+
+
+
+.social-box .main-box .box:nth-child(1 of .box) {
+    background-color: #D2ECFC;
+
+    & .image-date {
+        & span {
+            color: #1DA1F2;
+        }
+    }
+
+    & .social-icon,
+    & .share {
+        background-color: #1DA1F2;
+    }
+
+
+}
+
+.social-box .main-box .box:nth-child(2 of .box) {
+    background-color: #D1E4FC;
+
+    & .image-date {
+        & span {
+            color: #1877F2;
+        }
+    }
+
+    & .social-icon,
+    & .share {
+        background-color: #1877F2;
+
+    }
+}
+
+.social-box .main-box .box:nth-child(3 of .box) {
+    background-color: #FFCCCC;
+
+    & .image-date {
+
+        & span {
+            color: #FF0000;
+        }
+    }
+
+    & .social-icon,
+    & .share {
+        background-color: #FF0000;
+    }
+}
+
+.social-box .main-box .box:nth-child(4 of .box) {
+    background-color: #CCE4F0;
+
+    & .image-date {
+
+        & span {
+            color: #0077B5;
+        }
+    }
+
+    & .social-icon,
+    & .share {
+        background-color: #0077B5;
+    }
+
+}
+
+
+/* End Social Media */
+
+/* End Dashboard  */
+
+/* Start Edit Table */
+.table {
+    overflow-x: auto;
+}
+
+.table table {
+    border-spacing: 0;
+    min-width: 1000px;
+
+    thead {
+        & tr {
+            background-color: var(--main-color, #EEE);
+        }
+    }
+}
+
+.table table tbody {
+    & tr {
+        transition: var(--main-transition, 0.3s);
+
+        &:hover {
+            background-color: #FAF7F7;
+        }
+
+        & td {
+            font-size: 16px;
+            font-weight: 600;
+            border: 1px solid var(--main-color, #EEE);
+
+            & img {
+                width: 32px;
+                border: 2px solid white;
+            }
+
+        }
+
+        & img:not(:first-of-type) {
+            margin-left: -20px;
+        }
+
+    }
+
+    & tr td:last-child span {
+        --completed-color: #22C55E;
+        color: white;
+        background-color: var(--completed-color, green);
+        font-size: 14px;
+        font-weight: 600;
+        padding: 1px 10px;
+    }
+
+    & tr:first-of-type td:last-child span {
+        background-color: #F59E0B;
+
+    }
+
+    & tr:nth-of-type(2) td:last-child span {
+        background-color: #0075FF;
+    }
+
+    & tr:nth-last-of-type(2) td:last-child span {
+        background-color: #F44336;
+    }
+}
+
+/* End Edit Table */
+
+@keyframes trans-motion {
+
+    0%,
+    50%,
+    100% {
+        left: 50%;
+        background-color: black;
+    }
+
+    25% {
+        left: 10px;
+        color: rgb(136, 75, 5);
+    }
+
+    75% {
+        left: calc(100% - 10px);
+        background-color: rgb(11, 231, 37);
+    }
+
+    50% {
+        background-color: rgb(255, 109, 109);
+
+    }
+
+    100% {
+        background-color: rgb(165, 43, 241);
+    }
+}
+
+@keyframes background-line {
+
+    0% {
+        background-color: black;
+    }
+
+    25% {
+        color: rgb(136, 75, 5);
+    }
+
+    75% {
+        background-color: rgb(11, 231, 37);
+    }
+
+    50% {
+        background-color: rgb(255, 109, 109);
+
+    }
+
+    100% {
+        background-color: rgb(165, 43, 241);
+    }
+}
+
+@keyframes change-color {
+
+    0% {
+        color: black;
+    }
+
+    25% {
+        color: rgb(136, 75, 5);
+    }
+
+    75% {
+        color: rgb(30, 87, 36);
+    }
+
+    50% {
+        color: rgb(255, 109, 109);
+
+    }
+
+    100% {
+        color: rgb(165, 43, 241);
+    }
+}
+
+/*Start  Progress Animation */
+@keyframes progress {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    25%,
+    75% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/*ENd  Progress Animation */
+
+/* Start Loading Animation */
+@keyframes loading {
+    25% {
+        width: 25%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    75% {
+        width: 75%;
+    }
+
+    100% {
+        width: calc(100% - 15px);
+    }
+}
+
+/* End Loading Animation */
+
+/* Start Project Animation */
+@keyframes background-projects-line {
+
+    0% {
+        background-color: rgba(161, 161, 10, 0.979);
+    }
+
+    25% {
+        background-color: rgba(102, 28, 205, 0.651);
+    }
+
+    75% {
+        background-color: rgb(230, 4, 147);
+    }
+
+    50% {
+        background-color: rgba(161, 161, 10, 0.979);
+
+    }
+
+    100% {
+        background-color: rgb(176, 8, 8);
+    }
+}
+
+/* End Project Animation */

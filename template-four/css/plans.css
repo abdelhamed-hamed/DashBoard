@@ -1,0 +1,89 @@
+.plans-page {
+    --free-color: #22C55E;
+    --basic-color: #0075FF;
+    --premium-color: #F59E0B;
+
+    & .free,
+    & .basic,
+    .premium {
+        & .type {
+            &>div {
+                &>span {
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
+
+            & .price {
+                & span:first-of-type {
+                    font-size: 29px;
+                    margin-top: -26px;
+                }
+
+                & span:last-of-type {
+                    font-size: 50px;
+                }
+            }
+        }
+
+        & .details {
+            & .avilable-icon {
+                color: var(--free-color, green);
+            }
+
+            & .not-avilable-icon {
+                color: #F44336;
+            }
+
+            & .info-icon {
+                color: #888888;
+            }
+        }
+    }
+
+    & .free {
+        & .type {
+            background-color: var(--free-color, green);
+
+            &>div {
+                border: 3px solid white;
+                border: 1;
+                outline: 3px solid var(--free-color, green);
+            }
+        }
+
+        & .join {
+            background-color: var(--free-color, green);
+        }
+    }
+
+    & .basic {
+        & .type {
+            background-color: var(--basic-color, blue);
+
+            &>div {
+                border: 3px solid white;
+                outline: 3px solid var(--basic-color, blue);
+            }
+        }
+
+        & .join {
+            background-color: var(--basic-color, blue);
+        }
+    }
+
+    & .premium {
+        & .type {
+            background-color: var(--premium-color, orange);
+
+            &>div {
+                border: 3px solid white;
+                outline: 3px solid var(--premium-color, orange);
+            }
+        }
+
+        & .join {
+            background-color: var(--premium-color, orange);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.cources-page .box .image {
+    & img:first-of-type {
+        max-width: 100%;
+    }
+
+    & img:last-of-type {
+        width: 70px;
+        border: 2px solid white;
+        left: 20px;
+        top: 20px;
+        inset: 20px;
+    }
+}
+
+.cources-page .box .info {
+    .title {
+        & a {
+            margin: 0 auto;
+            background-color: var(--alt-color, blue);
+        }
+    }
+}

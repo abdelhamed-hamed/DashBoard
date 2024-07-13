@@ -1,0 +1,328 @@
+/* Start flex variables */
+
+.d-flex {
+    display: flex;
+}
+
+.al-center {
+    align-items: center;
+}
+
+.ju-center {
+    justify-content: center;
+}
+
+.ju-between {
+    justify-content: space-between;
+}
+
+.fl-di-col {
+    flex-direction: column;
+}
+
+/* End flex variables */
+
+/* Start Display */
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+/* End Display */
+
+/* Start Margin  */
+/* auto */
+.mar-auto {
+    margin: 0 auto;
+}
+
+/* top */
+.mar-0 {
+    margin: 0;
+}
+
+.mar-top-0 {
+    margin-top: 0;
+}
+
+.mar-top-5 {
+    margin-top: 5px;
+}
+
+.mar-top-10 {
+    margin-top: 10px;
+}
+
+.mar-top-15 {
+    margin-top: 15px;
+}
+
+.mar-top-20 {
+    margin-top: 20px;
+}
+
+/* right */
+
+.mar-ri-5 {
+    margin-right: 5px;
+}
+
+.mar-ri-10 {
+    margin-right: 10px;
+}
+
+.mar-ri-15 {
+    margin-right: 15px;
+}
+
+.mar-ri-20 {
+    margin-right: 20px;
+}
+
+/* bottom */
+.mar-bo-5 {
+    margin-bottom: 5px;
+}
+
+.mar-bo-10 {
+    margin-bottom: 10px;
+}
+
+.mar-bo-15 {
+    margin-bottom: 15px;
+}
+
+.mar-bo-20 {
+    margin-bottom: 20px;
+}
+
+.mar-bo-30 {
+    margin-bottom: 30px;
+}
+
+/* Left */
+.mar-le-5 {
+    margin-left: 5px;
+}
+
+.mar-le-10 {
+    margin-left: 10px;
+}
+
+.mar-le-15 {
+    margin-left: 15px;
+}
+
+.mar-le-20 {
+    margin-left: 20px;
+}
+
+/* End Margin  */
+
+/* Start Padding */
+
+/* Padding all */
+.pad-5 {
+    padding: 5px;
+}
+
+.pad-10 {
+    padding: 10px;
+}
+
+.pad-15 {
+    padding: 15px;
+}
+
+.pad-20 {
+    padding: 20px;
+}
+
+/* Padding Top */
+
+.pad-top-5 {
+    padding-top: 5px;
+}
+
+.pad-top-15 {
+    padding-top: 15px;
+}
+
+.pad-top-10 {
+    padding-top: 10px;
+}
+
+.pad-top-20 {
+    padding-top: 20px;
+}
+
+.pad-top-30 {
+    padding-top: 30px;
+}
+
+/* Padding Right */
+.pad-ri-5 {
+    padding-right: 5px;
+}
+
+.pad-ri-10 {
+    padding-right: 10px;
+}
+
+.pad-ri-15 {
+    padding-right: 15px;
+}
+
+.pad-ri-20 {
+    padding-right: 20px;
+}
+
+/* Padding Bottom */
+
+.pad-bo-5 {
+    padding-bottom: 5px;
+}
+
+.pad-bo-10 {
+    padding-bottom: 10px;
+}
+
+.pad-bo-15 {
+    padding-bottom: 15px;
+}
+
+.pad-bo-20 {
+    padding-bottom: 20px;
+}
+
+.pad-bo-30 {
+    padding-bottom: 30px;
+}
+
+/* Padding left */
+
+.pad-le-15 {
+    padding-left: 15px;
+}
+
+.pad-le-20 {
+    padding-left: 20px;
+}
+
+.pad-le-25 {
+    padding-left: 25px;
+}
+
+/* End Padding */
+
+/* Start Text Properities*/
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-17 {
+    font-size: 17px;
+}
+
+.cap {
+    text-transform: capitalize;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.l-height {
+    line-height: 1.7;
+}
+
+/* End Text Properities */
+
+/* Start Shape Raduis */
+
+.circle {
+    border-radius: 50%;
+}
+
+.bor-6 {
+    border-radius: 6px;
+}
+
+/* End Shape Raduis */
+
+/* Start All Color And backgrond an Shadow  */
+
+.c-black {
+    color: black;
+}
+
+.c-white {
+    color: white;
+}
+
+.c-888 {
+    color: #888;
+}
+
+.back-white {
+    background-color: white;
+}
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* End All Color And backgrond  */
+
+/* Start Whidth  and height */
+.fu-width {
+    width: 100%;
+}
+
+.fit-width {
+    width: fit-content;
+}
+
+.aspect-ratio {
+    aspect-ratio: 1 / 1;
+}
+
+/* End Whidth  and height */
+
+/* Start Overflow and position  */
+.flow-hidden {
+    overflow: hidden;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+/* End Overflow  */
+
+/* Start Textarea boredr */
+.area-border {
+    border: 1px solid #0037ff;
+}
+
+/*End Textarea boredr */

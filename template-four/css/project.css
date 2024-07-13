@@ -1,0 +1,78 @@
+@media(max-width:1199px) {
+    .project-page {
+        grid-template-columns: 1fr;
+    }
+}
+
+.person-dashboard .title {
+    & span:first-of-type {
+        margin-left: auto;
+    }
+
+    & h2:first-of-type {
+        font-size: 16px;
+    }
+
+    & P:first-of-type {
+        max-width: 100%;
+    }
+}
+
+@media(max-width:575px) {
+    .person-dashboard .title p:first-of-type {
+        font-size: 11px;
+    }
+}
+
+.person-dashboard .personal-photo {
+    & img {
+        width: 40px;
+        border: 3px solid white;
+        transition: var(--main-transition, 0.5s);
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            z-index: 1;
+        }
+    }
+
+    & img:not(:first-of-type) {
+        margin-left: -20px;
+    }
+}
+
+.person-dashboard .skills {
+    justify-content: end;
+    gap: 8px;
+}
+
+@media(max-width:575px) {
+    .person-dashboard .skills {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 11px;
+    }
+}
+
+.person-dashboard .salary-level {
+
+    & .skills-level {
+        width: 50%;
+        height: 7px;
+        background-color: #ccc;
+
+        & span:first-of-type {
+            height: 100%;
+            background-color: #F44336;
+        }
+    }
+}
+
+.person-dashboard:not(:nth-last-of-type(1)):not(:nth-last-of-type(4)):not(:nth-last-of-type(8)) .salary-level .skills-level span:first-of-type {
+    background-color: #22C55E;
+}
+
+.person-dashboard>div:not(:last-of-type) {
+    border-bottom: 1px solid #f0eaea;
+}

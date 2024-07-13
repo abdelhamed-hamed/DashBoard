@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/framework.css">
+    <link rel="stylesheet" href="../css/main-page.css">
+    <link rel="stylesheet" href="../css/setting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+</head>
+
+<body>
+    <div class="page-conten d-flex">
+        <!-- Start Sidebar -->
+        <div class=" sidebar">
+            <div class="sidbar-content pad-15">
+                <h3 class="pad-top-15 pad-bo-15 al-center cap mar-bo-15">abdelhamed</h3>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="../index.html" class="c-black pad-10 d-flex mar-bo-15"><i
+                                    class="fa-solid fa-chart-line fa-fw"></i><span
+                                    class="mar-le-15 cap none-mobile">dashboard</span></a>
+                        </li>
+                        <li> <a class="c-black pad-10 d-flex mar-bo-15 active"
+                                href="javascript:window.location.reload(true)"><i
+                                    class=" fa-solid fa-gear fa-fw"></i><span
+                                    class="mar-le-15 cap none-mobile">setting</span></a>
+                        </li>
+                        <li> <a href="profile.html" class="c-black pad-10 d-flex mar-bo-15"><i
+                                    class="fa-regular fa-user fa-fw"></i><span
+                                    class="mar-le-15 cap none-mobile">profile</span></a>
+                        </li>
+                        <li> <a href="cources.html" class="c-black pad-10 d-flex mar-bo-15"><i
+                                    class="fa-solid fa-graduation-cap fa-fw"></i><span
+                                    class="mar-le-15 cap">cources</span></a></li>
+                        <li> <a href="projects.html" class="c-black pad-10 d-flex mar-bo-15"><i
+                                    class="fa-solid fa-diagram-project fa-fw"></i><span
+                                    class="mar-le-15 cap none-mobile">projects</span></a>
+                        </li>
+                        <li> <a href="friends.html" class="c-black pad-10 d-flex mar-bo-15"><i
+                                    class="fa-solid fa-user-group fa-fw"></i><span
+                                    class="mar-le-15 cap none-mobile">friends</span></a>
+                        </li>
+                        <li> <a href="plans.html" class="c-black pad-10 d-flex mar-bo-15"><i
+                                    class="fa-solid fa-ruler-combined fa-fw"></i><span
+                                    class="mar-le-15 cap none-mobile">plans</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Sidebar -->
+        <div class="contact flow-hidden">
+            <!-- Start headeer -->
+            <header class="pad-15">
+                <div class="head-content d-flex">
+                    <form action="">
+                        <input type="search" placeholder="type a key word" class="bor-6 cap out-none bor-none">
+                    </form>
+                    <div class="d-flex al-center ">
+                        <i class="fa-regular fa-bell notification-icon"></i>
+                        <img src="../images/avatar.png" alt="NOT_FOUND" class="mar-le-15 ">
+                    </div>
+                </div>
+            </header>
+            <!-- End headeer -->
+            <div class="all-content">
+                <h1 class="cap pad-15 mar-bo-20 mar-top-10 relative fit-width">setting</h1>
+                <div class="setting-page grid-two pad-ri-15 pad-le-15 mar-bo-20">
+                    <div class="control back-white shadow bor-6 flow-hidden pad-15">
+                        <div class="address">
+                            <h2 class="font-bold mar-bo-10 cap font-bold h2-dashboard">site control</h2>
+                            <p class="mar-top-0 cap c-888 mar-bo-20">Control The Website If There Is Maintenance</p>
+                        </div>
+                        <div class="box">
+                            <div class="web-control flex-between">
+                                <div class="text">
+                                    <h3 class="mar-top-5 mar-bo-5 cap font-bold">Website Control</h3>
+                                    <p class="mar-top-0 cap c-888 mar-bo-20">Open/Close Website And Type The Reason</p>
+                                </div>
+                                <div class="toggle">
+                                    <label class="switch" for="web-control">
+                                        <input type="checkbox" id="web-control">
+                                        <span class="switch-rounded"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <textarea placeholder="close message content"
+                            class="bor-6 area-border pad-5 fu-width"></textarea>
+                    </div>
+                    <div class="info back-white shadow bor-6 flow-hidden pad-15">
+                        <div class="address">
+                            <h2 class="font-bold mar-bo-10 cap font-bold h2-dashboard">General Info</h2>
+                            <p class="mar-top-0 cap c-888 mar-bo-20">General Information About Your Account</p>
+                        </div>
+                        <form>
+                            <label for="fr-name" class="cap d-block c-888 mar-bo-10">first name</label>
+                            <input type="text" placeholder="first name"
+                                class="fu-width area-border bor-6 pad-10 mar-bo-15" id="fr-name">
+                            <label for="la-name" class="cap d-block c-888 mar-bo-10">last name</label>
+                            <input type="text" placeholder="last name"
+                                class="fu-width area-border bor-6 pad-10 mar-bo-15" id="la-name">
+                            <label for="email" class="cap d-block c-888 mar-bo-10">email</label>
+                            <div class="email d-flex al-center mar-bo-10">
+                                <input type="email" placeholder="mido@gmail.com" class="fu-width bor-6 pad-10 mar-ri-10"
+                                    id="email" disabled>
+                                <a href="#">
+                                    <input type="button" value="Change" class="cap">
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="security back-white shadow bor-6 flow-hidden pad-15">
+                        <div class="address">
+                            <h2 class="font-bold mar-bo-10 cap font-bold h2-dashboard">Security Info</h2>
+                            <p class="mar-top-0 cap c-888 mar-bo-20">Security Information About Your Account/p>
+                        </div>
+                        <div class="main-box">
+                            <div class="box password flex-center mar-bo-15">
+                                <div class="info cap">
+                                    <span>password</span>
+                                    <p class="mar-top-10 mar-bo-0 c-888">last Change on 25/10/2021</p>
+                                </div>
+                                <a href="#" class="pas-change button c-white">Change</a>
+                            </div>
+                            <div class="box two-factor flex-center mar-bo-15">
+                                <div class="info cap">
+                                    <span>Two-Factor Authentication</span>
+                                    <p class="mar-top-10 mar-bo-0 c-888">Enable/Disable The Feature</p>
+                                </div>
+                                <div class="toggle">
+                                    <label class="switch" for="security">
+                                        <input type="checkbox" id="security">
+                                        <span class="switch-rounded"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="box devices flex-center">
+                                <div class="info cap">
+                                    <span>devices</span>
+                                    <p class="mar-top-10 mar-bo-0 c-888">Check The Login Devices List</p>
+                                </div>
+                                <a href="#" class="devices button">devices</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social back-white shadow bor-6 flow-hidden pad-15">
+                        <div class="address">
+                            <h2 class="font-bold mar-bo-10 cap font-bold h2-dashboard">social Info</h2>
+                            <p class="mar-top-0 cap c-888 mar-bo-20">Social Media Information</p>
+                        </div>
+                        <div class="main-box">
+                            <div class="box twitter flow-hidden flex-center mar-bo-15">
+                                <label for="twitter">
+                                    <i class="fa-brands fa-square-twitter twitter icon flex-center"></i> </label>
+                                <input type="text" placeholder="twitter user name" id="twitter" class=" pad-5">
+                            </div>
+                            <div class="box facebook flow-hidden flex-center mar-bo-15">
+                                <label for="twitter">
+                                    <i class="fa-brands fa-square-facebook facebook icon flex-center"></i> </label>
+                                <input type="text" placeholder="facebook user name" id="facebook" class=" pad-5">
+                            </div>
+                            <div class="box linkedin flow-hidden flex-center mar-bo-15">
+                                <label for="linkedin">
+                                    <i class="fa-brands fa-linkedin linkedin icon flex-center"></i>
+                                </label>
+                                <input type="text" placeholder="linkedin user name" id="fa-square-linkedin"
+                                    class=" pad-5">
+                            </div>
+                            <div class="box youtube flow-hidden flex-center mar-bo-5">
+                                <label for="youtube">
+                                    <i class="fa-brands fa-youtube youtube icon flex-center"></i> </label>
+                                <input type="text" placeholder="youtube user name" id="youtube" class=" pad-5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-control back-white shadow bor-6 flow-hidden pad-15">
+                        <div class="address">
+                            <h2 class="font-bold mar-bo-10 cap font-bold h2-dashboard">Widgets Control</h2>
+                            <p class="mar-top-0 cap c-888 mar-bo-20">Show/Hide Widgets</p>
+                        </div>
+                        <div class="main-box cap">
+                             <div class="box mar-bo-10 cap d-flex al-center">
+                                <input type="checkbox" id="Quick Draft" name="control" value="Quick Draft" checked>
+                                  <label for="Quick Draft" class="font-bold pad-le-25">quick Draft</label>
+                            </div>
+                             <div class="box mar-bo-10 cap d-flex al-center">
+                                <input type="checkbox" id="Yearly Targets" name="control" value="Yearly Targets"
+                                    class="" checked>
+                                  <label for="Yearly Targets" class="font-bold pad-le-25">Yearly Targets</label>
+                            </div>
+                             <div class="box mar-bo-10 cap d-flex al-center">
+                                <input type="checkbox" id="Tickets Statistics" name="control" value="Tickets Statistics"
+                                    class="">
+                                  <label for="Tickets Statistics" class="font-bold pad-le-25">Tickets
+                                    Statistics</label>
+                            </div>
+                              <div class="box mar-bo-10 cap d-flex al-center">
+                                <input type="checkbox" id="Latest News" name="control" value="Latest News" checked>
+                                  <label for="Latest News" class="font-bold pad-le-25">Latest News</label>
+                            </div>
+                              <div class="box mar-bo-10 cap d-flex al-center">
+                                <input type="checkbox" id="Latest Tasks" name="control" value="Latest Tasks">
+                                  <label for="Latest Tasks" class="font-bold pad-le-25">Latest Tasks</label>
+                            </div>
+                              <div class="box mar-bo-10 cap d-flex al-center">
+                                <input type="checkbox" id="Top Search Items" name="control" value="Top Search Items"
+                                    checked>
+                                  <label for="Top Search Items" class="font-bold pad-le-25">Top Search Items</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="server back-white shadow bor-6 flow-hidden pad-15">
+                        <div class="address">
+                            <h2 class="font-bold mar-bo-10 cap font-bold h2-dashboard">Backup Manager</h2>
+                            <p class="mar-top-0 cap c-888 mar-bo-20">Control Backup Time And Location</p>
+                        </div>
+                        <div class="main-box d-flex">
+                            <div class="time mar-bo-30 pad-bo-20">
+
+                                <div class="box box mar-bo-15 cap d-flex al-center">
+                                    <input type="radio" id="daily" name="fav_language" value="daily">
+                                      <label for="daily" class="font-bold mar-le-10">daily</label>
+                                </div>
+                                <div class="box box mar-bo-15 cap d-flex al-center">
+                                    <input type="radio" id="weekly" name="fav_language" value="weekly">
+                                      <label for="weekly" class="font-bold mar-le-10">weekly</label>
+                                </div>
+                                <div class="box box mar-bo-15 cap d-flex al-center">
+                                    <input type="radio" id="monthly" name="fav_language" value="monthly" checked>
+                                      <label for="monthly" class="font-bold mar-le-10">monthly</label>
+                                </div>
+
+                            </div>
+                            <div class="server-type mar-top-20 flex-between cap mar-bo-10">
+                                <input type="radio" id="megaman" name="server-type" value="megaman">
+                                <label class="box text-center pad-20 pad-top-10 pad-bo-10 bor-6 mar-ri-20 fu-width"
+                                    for="megaman">
+                                    <i class="fa-solid fa-server mar-bo-10"></i>
+                                    <span class="d-block font-bold">megaman</span>
+                                </label>
+                                <input type="radio" id="zero" name="server-type" value="zero" checked>
+                                <label class="box text-center pad-20 pad-top-10 pad-bo-10 bor-6 mar-ri-20 fu-width"
+                                    for="zero">
+                                    <i class="fa-solid fa-server mar-bo-10"></i>
+                                    <span class="d-block font-bold">zero</span>
+                                </label>
+                                <input type="radio" name="server-type" value="sigma" id="sigma">
+                                <label class="box text-center pad-20 pad-top-10 pad-bo-10 bor-6 mar-ri-20 fu-width"
+                                    for="sigma">
+                                    <i class="fa-solid fa-server mar-bo-10"></i>
+                                    <span class="d-block font-bold">sigma</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
